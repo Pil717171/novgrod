@@ -1,0 +1,66 @@
+.home-menu
+    z-index: 2
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    &-item
+        margin: 25px
+        transform: rotate(270deg) 
+        position: relative  
+        top: 40px
+        left: 46%
+        &> a 
+            text-decoration: none
+            color: white
+            text-transform: uppercase
+            font-size: 13px
+            transition: 1s
+            &:hover
+                color: #1dd6f2
+.home-text
+    position: absolute
+    bottom: 90px
+    left: 3%   
+    width: 30%
+    &-novgrod
+        font-family: "ff-tisa-web-pro",serif
+        font-style: italic
+    &-text
+        font-family: sans-serif
+        font-size: 22px
+        font-style: italic
+        line-height: 1.2
+        color: inherit
+.home-read
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    position: absolute
+    bottom: 25px
+    left: 3% 
+    &-read     
+        cursor: pointer
+        transition: 0.3s 
+        margin-right: 10px
+        &:hover
+            transform: scale(1.1, 1.1)
+    &-line > hr
+        width: 1200px
+        height: 5px
+        align: center
+        color: white  
+    &-text 
+        margin-left: 10px
+        margin-bottom: 15px 
+    &-language 
+        color: grey
+        transition: 0.3s
+        cursor: pointer
+        &> span
+            margin-left: 10px 
+        &:hover
+            color: white
+              
+
