@@ -1,38 +1,28 @@
-.back {
-  z-index: 1; }
-
-.backgr {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+.home {
   position: absolute; }
 
-p {
-  z-index: 10; }
-
 .home-menu {
-  z-index: 2;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  top: 50px;
+  right: 20px; }
   .home-menu-item {
-    margin: 25px;
     transform: rotate(270deg);
-    position: relative;
-    top: 40px;
-    left: 46%; }
+    margin: 25px; }
     .home-menu-item > a {
       text-decoration: none;
-      color: white;
-      text-transform: uppercase;
-      font-size: 13px;
+      color: #eaedf2;
+      font-style: bold;
+      font-size: 15px;
       transition: 1s; }
       .home-menu-item > a:hover {
         color: #1dd6f2; }
 
 .home-text {
-  position: absolute;
+  position: fixed;
   bottom: 90px;
   left: 3%;
   width: 30%; }
@@ -51,8 +41,8 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  bottom: 25px;
+  position: fixed;
+  bottom: 5%;
   left: 3%; }
   .home-read-read {
     cursor: pointer;
@@ -71,15 +61,46 @@ p {
   .home-read-language {
     color: grey;
     transition: 0.3s;
-    cursor: pointer; }
+    cursor: pointer;
+    position: fixed;
+    bottom: 5%;
+    right: 3%; }
     .home-read-language > span {
       margin-left: 10px; }
     .home-read-language:hover {
       color: white; }
 
+.section_1 {
+  background: url("/assets/home.jpg");
+  background-repeat: no repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  min-height: 650px; }
+
+.section_2 {
+  background: url("/assets/section_2.jpg");
+  background-repeat: no repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  min-height: 650px; }
+
+.section_3 {
+  background: url("/assets/section_3.jpg");
+  background-repeat: no repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  min-height: 650px; }
+
 body {
   overflow: hidden;
+  transform: translateY(0);
+  transition: all .9s ease-in-out; }
+
+.content {
   font-family: 'Graphik Regular',sans-serif;
-  background: url("/assets/home.jpg") no-repeat;
-  background-size: cover;
-  color: white; }
+  color: white;
+  width: 100%;
+  height: 100vh; }

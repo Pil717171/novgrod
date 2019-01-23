@@ -1,25 +1,26 @@
+.home 
+    position: absolute
 .home-menu
-    z-index: 2
+    position: fixed
     display: flex
     flex-direction: column
     align-items: center
     justify-content: flex-start
+    top: 50px
+    right: 20px
     &-item
-        margin: 25px
         transform: rotate(270deg) 
-        position: relative  
-        top: 40px
-        left: 46%
+        margin: 25px
         &> a 
             text-decoration: none
-            color: white
-            text-transform: uppercase
-            font-size: 13px
+            color: #eaedf2
+            font-style: bold
+            font-size: 15px
             transition: 1s
             &:hover
                 color: #1dd6f2
 .home-text
-    position: absolute
+    position: fixed
     bottom: 90px
     left: 3%   
     width: 30%
@@ -37,8 +38,8 @@
     flex-direction: row
     justify-content: space-between
     align-items: center
-    position: absolute
-    bottom: 25px
+    position: fixed
+    bottom: 5%
     left: 3% 
     &-read     
         cursor: pointer
@@ -58,6 +59,9 @@
         color: grey
         transition: 0.3s
         cursor: pointer
+        position: fixed
+        bottom: 5%
+        right: 3%
         &> span
             margin-left: 10px 
         &:hover
