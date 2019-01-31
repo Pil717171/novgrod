@@ -3,6 +3,16 @@ var coord = 0
 var about = document.querySelector('.about')
 var contact = document.querySelector('.contact')
 var photo = document.querySelector('.photo')
+var lang = document.querySelector('.home-read-lang')
+var eng = document.querySelector('.home-read-language-eng') 
+
+
+lang.onmouseover = () => {
+    eng.classList.add("home-read-language-eng--eng")
+}
+lang.onmouseout = () => {
+    eng.classList.remove("home-read-language-eng--eng")
+}
 
 about.addEventListener('click', () => {
     coord = -100
@@ -40,15 +50,35 @@ window.addEventListener('wheel', (e) => {
             body.style.transform = "translateY("+coord+"%)"
         }
     }
-})
+});
 
-// var c = 0
-// window.addEventListener('wheel', (e) => {
-//     if (e.deltaY < coord) {
-//         body.style.transform = "translateY(100%)" 
-//     }
-//     else {
-//         body.style.transform = "translateY(-100%)"
-//     }
-// })
+
+// document.addEventListener('keydown', function (e) {
+//         var code = e.keyCode  
+    
+//         if (code = 38) {
+//             coord +=100
+//             body.style.transform = "translateY("+coord+"%)"
+//             if (coord >= 0) {
+//                 body.style.transform = "translateY(0)"
+//             }
+//         }
+//         else if (code = 40) {
+//             coord -=100
+//             body.style.transform = "translateY("+coord+"%)"
+//             if (coord <= -300) {
+//                 body.style.transform = "translateY(-300%)"
+//             }
+//         }
+//     })
+        
+
+
+   
+
+
+
+
+
+
 

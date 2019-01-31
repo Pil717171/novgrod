@@ -1,42 +1,48 @@
 .home 
-    position: absolute
 .home-menu
     position: fixed
     display: flex
     flex-direction: column
     align-items: center
     justify-content: flex-start
-    top: 50px
-    right: 20px
+    right: 0%
+    padding-top: 10%
+    background: rgba(186, 190, 196, 0.5)
+    height: 100%
+    width: 9%
     &-item
         transform: rotate(270deg) 
         margin: 25px
         &> a 
             text-decoration: none
-            color: #eaedf2
+            color: #dcdee2
             font-style: bold
-            font-size: 15px
+            font-family: 'Yanone Kaffeesatz', sans-serif
+            font-size: 18px
             transition: 1s
             &:hover
-                color: #1dd6f2
+                color: grey
 .home-text
-    position: fixed
+    position: absolute
     bottom: 90px
     left: 3%   
-    width: 30%
+    width: 40%
+    border: 6px solid white
+    padding: 12px
     &-novgrod
-        font-family: "ff-tisa-web-pro",serif
-        font-style: italic
+        font-family: 'Russo One', sans-serif
+        // font-style: italic
     &-text
-        font-family: sans-serif
+        font-family: 'Russo One', sans-serif
         font-size: 22px
-        font-style: italic
+        // font-style: italic
         line-height: 1.2
         color: inherit
 .home-read
     display: flex
     flex-direction: row
     justify-content: space-between
+    font-family: 'Yanone Kaffeesatz', sans-serif
     align-items: center
     position: fixed
     bottom: 5%
@@ -47,6 +53,15 @@
         margin-right: 10px
         &:hover
             transform: scale(1.1, 1.1)
+    &-lang
+        display: flex
+        flex-direction: column
+        color: #dcdee2
+        transition: 0.3s
+        cursor: pointer
+        position: fixed
+        bottom: 5%
+        right: 3%
     &-line > hr
         width: 1200px
         height: 5px
@@ -56,15 +71,19 @@
         margin-left: 10px
         margin-bottom: 15px 
     &-language 
-        color: grey
-        transition: 0.3s
-        cursor: pointer
-        position: fixed
-        bottom: 5%
-        right: 3%
         &> span
             margin-left: 10px 
         &:hover
             color: white
-              
-
+        &-eng
+            display: none
+            transition: 0.4s
+            &--eng
+                display: block    
+.fa-angle-up
+    transition: .3s 
+    &:hover
+        transform: rotate(180deg) 
+                
+.modal
+   color: grey

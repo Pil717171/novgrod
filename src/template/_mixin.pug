@@ -1,0 +1,17 @@
+mixin photoBig (url, text, price)
+    div.photo-big
+        div.photo-big-url
+            img(src=url, alt=text)
+        div.photo-big-text
+            p= text
+        div.photo-big-price
+            p= price
+
+mixin photoSmall (url, text, price)
+    div.photo-small
+        div.photo-small-url
+            img(src=url, alt=text)
+        div.photo-small-text
+            p= text
+        div.photo-small-price
+            p= price            

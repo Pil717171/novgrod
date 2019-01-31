@@ -1,0 +1,75 @@
+.section_4
+    background-color: #262323
+    width: 100%
+    height: 100%
+    &-photo
+        display: flex
+        flex-direction: column
+        align-items: stretch
+        justify-content: center
+        cursor: pointer
+        &-row
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            align-items: flex-start
+            margin: 10px  
+    &-home
+        font-family: 'Russo One', sans-serif
+        cursor: pointer
+        transition: .4s
+        &:hover
+            color: black       
+.photo
+    &-big
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        border: 3px solid #bac2d1
+        margin: 10px
+        background: #efe3e3
+        opacity: 0.5
+        transition: 0.4s
+        border-radius: 15px
+        &:hover
+            opacity: 1
+            transform: scale(1.2, 1.2)
+        &-price
+            font-family: 'Russo One', sans-serif
+            font-size: 20px 
+            color: #262323 
+        &-url
+            padding-top: 2%  
+            >img 
+                height: 150px
+        &-text
+            font-family: 'Russo One', sans-serif
+            font-size: 20px  
+            color: #262323  
+    &-small
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        border: 5px solid #bac2d1
+        background: #efe3e3
+        opacity: 0.5
+        transition: 0.4s
+        border-radius: 15px
+        &:hover
+            opacity: 1
+            transform: scale(1.2, 1.2)
+        &-price
+            font-family: 'Russo One', sans-serif
+            font-size: 20px 
+            color: #262323 
+        &-url
+            padding-top: 2% 
+            >img 
+                height: 110px 
+        &-text
+            font-family: 'Russo One', sans-serif
+            font-size: 20px 
+            color: #262323 
+    
