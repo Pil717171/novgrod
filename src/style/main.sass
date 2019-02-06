@@ -3,7 +3,7 @@
 @import "component/section_2"
 @import "component/section_3"
 @import "component/section_4"
-@import "component/section_5"
+
 
 
 body 
@@ -12,9 +12,15 @@ body
   transition: all .9s ease-in-out
 .content 
   font-family: 'Graphik Regular',sans-serif
-  color: white
+  color: #feffff
   width: 100%
   height: 100vh
+img
+    opacity: 1
+    transition: opacity 5s
+
+img[data-src] 
+    opacity: 0  
 
 
   

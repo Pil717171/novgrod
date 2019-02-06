@@ -1,5 +1,5 @@
 var sec4 = document.querySelector(".section_4");
-console.log(sec4)
+
 
 (function fromHome () {
     var home = document.querySelector('.section_4-home')
@@ -8,3 +8,12 @@ console.log(sec4)
     return coord = 0     
     })
 }())
+
+ScrollReveal().reveal('.section_4-photo-small', {
+    distance: '0px',
+    opacity: 0.8
+});
+
+
+
+
